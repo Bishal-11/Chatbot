@@ -3,7 +3,7 @@
 from chatbot import Chat, register_call
 import wikipedia
 
-#Chat and register_call are classes/methods from the chatbot module.
+Chat and register_call are classes/methods from the chatbot module.
 wikipedia is imported for querying information from Wikipedia.
 
 # Registering a Custom Call:
@@ -22,7 +22,7 @@ def who_is(session, query):
 @register_call("customWhoIs") decorates the who_is function, registering it with the name "customWhoIs."
 This function uses Wikipedia to fetch a summary for a given query. If unsuccessful, it tries alternative queries.
 
-#Disabling GUI for Non-Interactive Environment:
+# Disabling GUI for Non-Interactive Environment:
 
 def converse_no_gui(self, first_question):
     response = self.respond(first_question)
